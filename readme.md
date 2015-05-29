@@ -1,5 +1,5 @@
 [![MIT License][license-image]][license-url]
-# MyAPI 1.01
+# MyAPI v1.01
 
 - easy tool for creating a rich documentation
 - designed for REST services, libraries or frameworks
@@ -18,11 +18,11 @@ Download `api.html` file and change the JSON content on the bottom page. You can
 
 ## How do you version it?
 
-Rename the `api.html` by yourself, e.g. `api_v1.html`.
+You can rename the `api.html` by yourself, e.g. `v1.html`.
 
 __Structure:__
 
-```json
+```text
 {
   "name": "My API name", // an API name
   "modified": "2015-12-12 12:00:00",
