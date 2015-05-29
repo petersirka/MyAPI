@@ -8,12 +8,14 @@
 - __hashtags__ navigation
 - API documentation can be only in JSON structure
 - works on localhost without server
+- supports: searching
+- supports: pages (articles, tutorials, e.g.)
+- supports: external links
+- browsers: IE9+, Chrome, Firefox and Opera
+- responsive
+- Look into the [__LIVE EXAMPLE__](https://www.totaljs.com/myapi-example.html)
 - based on <http://docs.totaljs.com>
 - best use with [total.js - web application framework for node.js](https://www.totaljs.com)
-- supports only IE9+, Chrome, Firefox and Opera
-- searching
-- simple support for mobile devices
-- [LIVE EXAMPLE](https://www.totaljs.com/myapi-example.html)
 
 ## How do you use it?
 
@@ -124,6 +126,14 @@ You can edit JSON documentation in e.g. <https://itunes.apple.com/us/app/power-j
   ]
 }
 ```
+
+## Libraries
+
+- Highlight.js <https://highlightjs.org/>
+- Marked (markdown parser) <https://github.com/chjj/marked>
+- Bootstrap (custom) <http://getbootstrap.com/>
+- jQuery <http://jquery.com/>
+- Tangular <https://github.com/petersirka/Tangular>
 
 ## Contact
 
