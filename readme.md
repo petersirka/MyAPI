@@ -1,6 +1,7 @@
 [![MIT License][license-image]][license-url]
 # MyAPI v1.01
 
+- completed solution
 - easy tool for creating a rich documentation
 - designed for REST services, libraries or frameworks
 - single file without any dependencies
