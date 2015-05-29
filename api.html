@@ -53,7 +53,9 @@
                     <div class="body hidden">
                         {{ if m.default }}<div class="member-body-default"><b>Default value</b>: {{ m.default }}</div>{{ fi }}
                         <div class="member-body-name">{{ m.name }}</div>
+                        {{ if m.url }}
                         <div class="member-url">{{ if m.method }}<span class="members-method">{{ m.method }}</span>{{ fi }}{{ m.url | url }}</div>
+                        {{ fi }}
                         {{ if m.params && m.params.length > 0 }}
                             <div class="member-body-params">
                                 {{ m.params | params }}
@@ -123,7 +125,7 @@
   [
     {
         "group": "Group",
-        "name": "Group name",
+        "name": "REST",
         "description": "Markdown (GFM) __syntax highlighting__.",
         "types":
         [
@@ -132,7 +134,7 @@
                 "description": "Markdown (GFM) __syntax highlighting__.",
                 "method": "GET",
                 "output": "{\"success\":true}",
-                "url": "http://blablabla.com/users/",
+                "url": "http://blablabla.com/users/{id}/",
                 "return": "JSON",
                 "headers":
                 [
@@ -170,7 +172,8 @@
                         "name": "type",
                         "type": "Number",
                         "description": "Description ...",
-                        "options": ["optional"]
+                        "options": ["optional"],
+                        "default": 4
                     }
                 ]
             }

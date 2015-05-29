@@ -4,13 +4,16 @@
 - easy tool for creating a rich documentation
 - designed for REST services, libraries or frameworks
 - single file without any dependencies
-- __hashtags__ URL navigation
-- JSON structure (you can edit JSON documentation in e.g. <https://itunes.apple.com/us/app/power-json-editor/id499768540?mt=12>)
+- supports syntax highlight in markdown same as GitHub
+- __hashtags__ navigation
+- API documentation can be only in JSON structure
 - works on localhost without server
-- based on <https://docs.totaljs.com>
+- based on <http://docs.totaljs.com>
 - best use with [total.js - web application framework for node.js](https://www.totaljs.com)
 - supports only IE9+, Chrome, Firefox and Opera
+- searching
 - simple support for mobile devices
+- [LIVE EXAMPLE](https://www.totaljs.com/myapi-example.html)
 
 ## How do you use it?
 
@@ -20,7 +23,9 @@ Download `api.html` file and change the JSON content on the bottom page. You can
 
 You can rename the `api.html` by yourself, e.g. `v1.html`.
 
-__Structure:__
+## JSON structure
+
+You can edit JSON documentation in e.g. <https://itunes.apple.com/us/app/power-json-editor/id499768540?mt=12>.
 
 ```text
 {
@@ -45,7 +50,7 @@ __Structure:__
                 "description": "Markdown (GFM) __syntax highlighting__.",
                 "method": "GET", // (optional) only for REST methods
                 "output": "{\"success\":true}", // (optional) a response for the request
-                "url": "http://blablabla.com/users/", // optional
+                "url": "http://blablabla.com/users/{id}/", // optional
                 "return": "JSON", // (optional) a return value
                 "headers": // (optional) only for REST
                 [
@@ -86,6 +91,7 @@ __Structure:__
                         "type": "Number",
                         "description": "Description ...",
                         "options": ["optional"] // (optional) custom options
+                        "default": 4 // (optional) a default value
                     }                 
                 ]
             }            
