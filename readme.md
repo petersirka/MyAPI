@@ -38,7 +38,7 @@ You can edit JSON documentation in e.g. <https://itunes.apple.com/us/app/power-j
   "build": "", // build version
   "default": "pages~Welcome", // a default page
 
-  // API  
+  // API
   "api":
   [
     {
@@ -49,6 +49,8 @@ You can edit JSON documentation in e.g. <https://itunes.apple.com/us/app/power-j
         [
             // REST EXAMPLE
             {
+                "changetype": 0, // optional, 1: new, 2: change
+                "changelog": "changelog", // optional, changelog
                 "name": "Users: list of users",
                 "description": "Markdown (GFM) __syntax highlighting__.",
                 "method": "GET", // (optional) only for REST methods
@@ -78,7 +80,7 @@ You can edit JSON documentation in e.g. <https://itunes.apple.com/us/app/power-j
                         "name": "page",
                         "type": "Number",
                         "description": "Listing."
-                    }                    
+                    }
                 ]
             },
 
@@ -95,9 +97,9 @@ You can edit JSON documentation in e.g. <https://itunes.apple.com/us/app/power-j
                         "description": "Description ...",
                         "options": ["optional"] // (optional) custom options
                         "default": 4 // (optional) a default value
-                    }                 
+                    }
                 ]
-            }            
+            }
         ]
     }
   ],
@@ -111,7 +113,7 @@ You can edit JSON documentation in e.g. <https://itunes.apple.com/us/app/power-j
     {
       "name": "Contact",
       "body": "Markdown (GFM) __syntax highlighting__."
-    }    
+    }
   ],
   // Links (optional)
   "links":
@@ -123,7 +125,7 @@ You can edit JSON documentation in e.g. <https://itunes.apple.com/us/app/power-j
     {
       "name": "GitHub",
       "url": "https://github.com/petersirka/MyAPI"
-    }    
+    }
   ]
 }
 ```
